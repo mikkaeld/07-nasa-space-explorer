@@ -1,0 +1,258 @@
+{
+  "designSystem": {
+    "name": "NASA Web Design System",
+    "version": "1.0",
+    "description": "Design system profile extracted from NASA.gov featuring modern space-themed interfaces with strong visual hierarchy and accessibility focus"
+  },
+  
+  "colorPalette": {
+    "primary": {
+      "background": "#000000",
+      "backgroundSecondary": "#1a1a1a",
+      "backgroundTertiary": "#2a2a2a"
+    },
+    "accent": {
+      "nasaBlue": "#0B3D91",
+      "nasaRed": "#FC3D21",
+      "nasaRedSecondary": "#D63638"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#E0E0E0",
+      "muted": "#A0A0A0"
+    },
+    "interactive": {
+      "ctaBackground": "#FC3D21",
+      "ctaHover": "#E63320",
+      "linkDefault": "#FFFFFF",
+      "linkHover": "#E0E0E0"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "primary": "system font stack or custom sans-serif",
+      "fallback": "Arial, Helvetica, sans-serif"
+    },
+    "hierarchy": {
+      "hero": {
+        "fontSize": "clamp(3rem, 8vw, 6rem)",
+        "fontWeight": "700-900",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.02em"
+      },
+      "heading1": {
+        "fontSize": "clamp(2rem, 5vw, 3.5rem)",
+        "fontWeight": "700",
+        "lineHeight": "1.2"
+      },
+      "heading2": {
+        "fontSize": "clamp(1.5rem, 3vw, 2.5rem)",
+        "fontWeight": "600",
+        "lineHeight": "1.3"
+      },
+      "bodyLarge": {
+        "fontSize": "1.125rem",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "bodyRegular": {
+        "fontSize": "1rem",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "caption": {
+        "fontSize": "0.875rem",
+        "fontWeight": "500",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.1em"
+      }
+    }
+  },
+
+  "layout": {
+    "grid": {
+      "maxWidth": "1440px",
+      "columns": 12,
+      "gutters": "1.5rem",
+      "margins": "2rem"
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "1rem", 
+      "md": "1.5rem",
+      "lg": "2rem",
+      "xl": "3rem",
+      "xxl": "4rem",
+      "xxxl": "6rem"
+    },
+    "breakpoints": {
+      "mobile": "480px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "large": "1440px"
+    }
+  },
+
+  "components": {
+    "navigation": {
+      "structure": "horizontal top bar",
+      "background": "rgba(0,0,0,0.9) with backdrop blur",
+      "height": "80px",
+      "logo": {
+        "position": "center",
+        "type": "NASA meatball logo",
+        "size": "48px"
+      },
+      "menuItems": {
+        "position": "right aligned",
+        "styling": "uppercase, medium weight, adequate spacing",
+        "hover": "subtle color transition"
+      }
+    },
+
+    "heroSection": {
+      "layout": "full viewport height with background image/video",
+      "contentAlignment": "left-aligned, vertically centered",
+      "contentWidth": "60% max on larger screens",
+      "backgroundTreatment": "dark overlay for text readability",
+      "ctaButton": {
+        "style": "solid background with accent color",
+        "padding": "1rem 2rem",
+        "borderRadius": "4px",
+        "fontWeight": "600"
+      }
+    },
+
+    "cardGrid": {
+      "layout": "CSS Grid with responsive columns",
+      "cardStructure": {
+        "background": "dark with subtle borders or gradients",
+        "borderRadius": "8px",
+        "padding": "1.5rem",
+        "imageAspectRatio": "16:9 or 4:3",
+        "contentHierarchy": [
+          "category label (small, uppercase)",
+          "headline (large, bold)",
+          "metadata (reading time, etc.)"
+        ]
+      },
+      "hover": {
+        "transform": "subtle scale or translate",
+        "transition": "smooth 300ms ease"
+      }
+    },
+
+    "badges": {
+      "readingTime": {
+        "background": "rgba(255,255,255,0.1)",
+        "padding": "0.25rem 0.75rem",
+        "borderRadius": "16px",
+        "fontSize": "0.75rem",
+        "textTransform": "uppercase"
+      },
+      "category": {
+        "background": "transparent",
+        "border": "1px solid rgba(255,255,255,0.3)",
+        "padding": "0.25rem 0.75rem",
+        "fontSize": "0.75rem",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.1em"
+      }
+    }
+  },
+
+  "visualTreatments": {
+    "imagery": {
+      "style": "high-quality space/science photography",
+      "treatment": "often with subtle overlays or gradients",
+      "aspectRatios": ["16:9", "4:3", "1:1"],
+      "loading": "progressive with blur-up technique"
+    },
+
+    "backgrounds": {
+      "primary": "solid black or very dark gradients",
+      "secondary": "space imagery with dark overlays",
+      "patterns": "subtle geometric or constellation-inspired elements"
+    },
+
+    "overlays": {
+      "textReadability": "rgba(0,0,0,0.4) to rgba(0,0,0,0.7)",
+      "gradients": "linear gradients from transparent to black"
+    }
+  },
+
+  "interactions": {
+    "transitions": {
+      "duration": "200-400ms",
+      "easing": "ease-out or cubic-bezier curves",
+      "properties": ["transform", "opacity", "color"]
+    },
+    
+    "hover": {
+      "cards": "subtle scale (1.02-1.05) or y-translate (-4px)",
+      "buttons": "background color change with smooth transition",
+      "links": "color change or underline animation"
+    },
+
+    "focus": {
+      "outline": "2px solid NASA blue with offset",
+      "backgroundChange": "subtle highlight for interactive elements"
+    }
+  },
+
+  "accessibility": {
+    "contrast": {
+      "textOnDark": "minimum 4.5:1 ratio maintained",
+      "interactiveElements": "clear visual hierarchy and sufficient contrast"
+    },
+    "focusManagement": {
+      "keyboardNavigation": "clear focus indicators",
+      "skipLinks": "implemented for screen readers"
+    }
+  },
+
+  "responsive": {
+    "approach": "mobile-first with progressive enhancement",
+    "typography": "fluid scaling using clamp() functions",
+    "layout": "CSS Grid with auto-fit/auto-fill patterns",
+    "images": "responsive with appropriate srcset attributes",
+    "navigation": "collapsible hamburger menu on mobile"
+  },
+
+  "contentStructure": {
+    "informationHierarchy": [
+      "category/context label",
+      "primary headline", 
+      "supporting description",
+      "metadata (time, author, etc.)",
+      "call-to-action"
+    ],
+    
+    "scanability": {
+      "whitespace": "generous spacing between elements",
+      "grouping": "related content visually grouped",
+      "emphasis": "strategic use of size, weight, and color for hierarchy"
+    }
+  },
+
+  "brandingElements": {
+    "logoUsage": "NASA meatball logo prominently featured",
+    "colorConsistency": "NASA red used sparingly for emphasis and CTAs",
+    "voiceAndTone": "authoritative yet accessible, scientific but human",
+    "imagery": "authentic NASA photography and mission content"
+  },
+
+  "technicalConsiderations": {
+    "performance": {
+      "imageOptimization": "WebP/AVIF with fallbacks",
+      "lazyLoading": "intersection observer for images and heavy content",
+      "criticalCSS": "above-the-fold styles inlined"
+    },
+    
+    "modernFeatures": {
+      "cssFeaturesUsed": ["CSS Grid", "Flexbox", "Custom Properties", "clamp()", "backdrop-filter"],
+      "progressiveEnhancement": "core functionality works without JavaScript"
+    }
+  }
+}
